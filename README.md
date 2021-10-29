@@ -19,10 +19,10 @@ https://www.imdpune.gov.in/Clim_Pred_LRF_New/Grided_Data_Download.html		- IMD Gr
 https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5		  - ERA5 Reanalysis Data
 https://psl.noaa.gov/data/gridded/data.ncep.reanalysis2.html			        - NCEP Reanalysis 2 Data
 
-The Python routines used in the scripts include netCDF4, numpy, pyngl and datetime. It is to be noted that there are 
-multiple ways available in Python to perform these operations and here we try to depict only some methods.
+The Python routines used in the scripts include os, netCDF4, numpy, pyngl, xarray, cfgrib and datetime. It is to be noted that there are 
+multiple ways available in Python to perform these operations and here we try to depict only few of them.
 
-The path for obtaining the scripts are listed below:
+The path for obtaining the scripts and sample data are listed below:
 
 1. Read scripts
 	CAUI-IMDPune/Python-DEMO-Scripts/Read/
@@ -32,3 +32,5 @@ The path for obtaining the scripts are listed below:
 	CAUI-IMDPune/Python-DEMO-Scripts/write/
 4. Sample Datasets
 	CAUI-IMDPune/Python-DEMO-Scripts/Sample_Data/
+Due to size restrictions for uploading data files some files are not included in '/Sample_Data', one can get it from the web portals mentioned
+above.
