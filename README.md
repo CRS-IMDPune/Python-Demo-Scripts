@@ -32,5 +32,6 @@ The path for obtaining the scripts and sample data are listed below:
 	CAUI-IMDPune/Python-DEMO-Scripts/write/
 4. Sample Datasets
 	CAUI-IMDPune/Python-DEMO-Scripts/Sample_Data/
+	
 Due to size restrictions for uploading data files some files are not included in '/Sample_Data', one can get it from the web portals mentioned
 above.
