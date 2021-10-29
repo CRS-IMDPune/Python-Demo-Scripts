@@ -9,8 +9,7 @@ weather and climate related research studies. Here we have used sample data of t
 provided in the folder 'CAUI-IMDPune/Python-Demo-Scripts/Sample_Data/'.
 
 The structure of this repository is that sub-folders for read, subset and write files have been created with each 
-of them containing seperate folders for each data types used. Each of the sub-folder is provided with a readme file
-which have the details of the scripts. Here we have used the NetCDF4 and BINARY data from dataset provided by 
+of them containing seperate folders for each data types used. Here we have used the NetCDF4 and BINARY data from dataset provided by 
 India Meteorology Department, GRIB files from fifth generation ECMWF Reanalysis data (ERA5) and also NETCDF4 data
 from NCEP reanalysis datasets. 
 
