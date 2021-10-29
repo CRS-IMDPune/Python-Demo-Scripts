@@ -1,6 +1,6 @@
 # Python-Demo-Scripts
 
-This project is meant to give a basic idea of how to access different types of data such as read them, subset them
+This project is meant to give a basic idea of how to access different types of data such as to read them, subset them
 for particular location, level and time and writing a variable in a new file using Python Programming language.
 Here we have used Python3 compiler for compiling the scripts. This includes some introductory scripts which will 
 be further updated in due course by including plotting techniques also. It is to be noted that this project mainly
