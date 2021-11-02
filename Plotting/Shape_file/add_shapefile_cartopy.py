@@ -1,3 +1,5 @@
+##################Plotting a filled contour overlaid by wind vector and shapefile added to it#######################
+
 ###########Import necessary modules##########################
 
 import netCDF4 as nc
@@ -11,9 +13,8 @@ from cartopy.io.shapereader import Reader
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
 ############ File to be read ####################
-############ IMD Gridded Rainfall data ##########
 
-file_name  = filename='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
+file_name  ='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 
 ################# open file ######################
 
