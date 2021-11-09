@@ -1,4 +1,3 @@
-########Plotting time series of rainfall at a particular location#############
 
 ###########Import necessary modules##########################
 
@@ -9,9 +8,8 @@ import datetime as dt
 from mpl_toolkits.basemap import Basemap
 
 ############ File to be read ####################
-############ IMD Gridded Rainfall data ##########
 
-file_name  = filename='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
+file_name  ='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 
 ################# open file ######################
 
@@ -84,3 +82,4 @@ plt.ylabel('Latitude', labelpad=40, fontsize=8)
 plt.colorbar(shrink=0.5)
 plt.title('U wind at 10m')
 plt.savefig('contour_map_basemap.png', dpi=100)
+exit()
