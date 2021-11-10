@@ -33,7 +33,7 @@ The path for obtaining the scripts and sample data are listed below:
 3. Writing Scripts 
 	CAUI-IMDPune/Python-DEMO-Scripts/write/
 4. Plotting Scripts
-	CAUI-IMDPune/Python-DEMO-Scripts/plotting/
+	CAUI-IMDPune/Python-DEMO-Scripts/Plotting/
 5. Sample Datasets
 	CAUI-IMDPune/Python-DEMO-Scripts/Sample_Data/
 	
