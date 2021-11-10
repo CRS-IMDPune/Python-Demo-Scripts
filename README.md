@@ -53,13 +53,16 @@ The example scripts for each of the operations performed are kept in seperate fo
 operations included are reading, subsetting, writing and plotting the datasets. The 'Read' directory contains seperate 
 sub-folders for netcdf, binary and grib format. Each of these sub-folders include scripts for reading single and multiple 
 files using Python. 
+
 Similar subfolders are also placed in the 'subset' directory for each data types. This operation handles subsetting of the 
 data for required time steps, spatial extent and vertical levels.The scripts for writing subset of a dataset in a new file 
-of netCDF4 format are included in the sub-folders of 'write' folder.   
+of netCDF4 format are included in the sub-folders of 'write' folder.  
+
 In the 'plotting' directory sub-folders are given for different kinds of plotting techniques that can be used for analysis.
 It includes time series, line and filled contours, including maps, overlaying plots, vector plots and usage of shapefiles.
 Shapefile has been used to give administrative boundaries (Eg: state or district) in the map and also has been used for 
 obtaining zonal statistics (such as state average) and to plot them.
+
 The sample datasets used in this project has been included in the 'Sample_Data' directory.
 	
 Due to size restrictions for uploading data files some files are not included in '/Sample_Data', one can get it from the web
