@@ -17,9 +17,8 @@ import cartopy.feature as cfeature
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
 ############ File to be read ####################
-############ IMD Gridded Rainfall data ##########
 
-file_name  = filename='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
+file_name  ='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 
 ################# open file ######################
 
@@ -38,8 +37,7 @@ u10   = f.variables['u10'][:]
 v10   = f.variables['v10'][:]
 lats = f.variables['latitude'][:]
 lons = f.variables['longitude'][:]
-time = f.variables['time']		# In the file for the time dimension year has been set as 2010 in all year files
-
+time = f.variables['time']		
 #print(lons.min()," ,",lons.max())
 #print(lats)
 ##############Subscripting over lat, lon and time###############
