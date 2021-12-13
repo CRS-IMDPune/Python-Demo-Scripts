@@ -7,7 +7,7 @@ Here we have used Python3.6.7 compiler for compiling the scripts. This includes 
 be useful for the analysis of meorological gridded datasets. It is to be noted that this project mainly focus on 
 the data types such as NetCDF4, BINARY and GRIB format which are some of the most common datasets available for 
 weather and climate related research studies. Here we have used sample data of the aforementioned types which is 
-provided in the folder 'CAUI-IMDPune/Python-Demo-Scripts/Sample_Data/'.
+provided in the folder 'CRS-IMDPune/Python-Demo-Scripts/Sample_Data/'.
 
 The structure of this repository is that sub-folders for reading, subsetting and writing the files have been created
 with each of them containing seperate folders for each data types used. A sub-folder with some of the most common 
@@ -38,15 +38,15 @@ operations and here we try to depict only few of them.
 The path for obtaining the scripts and sample data are listed below:
 
 1. Read scripts
-	CAUI-IMDPune/Python-DEMO-Scripts/Read/
+	CRS-IMDPune/Python-DEMO-Scripts/Read/
 2. Subsetting scripts
-	CAUI-IMDPune/Python-DEMO-Scripts/subset/
+	CRS-IMDPune/Python-DEMO-Scripts/subset/
 3. Writing Scripts 
-	CAUI-IMDPune/Python-DEMO-Scripts/write/
+	CRS-IMDPune/Python-DEMO-Scripts/write/
 4. Plotting Scripts
-	CAUI-IMDPune/Python-DEMO-Scripts/Plotting/
+	CRS-IMDPune/Python-DEMO-Scripts/Plotting/
 5. Sample Datasets
-	CAUI-IMDPune/Python-DEMO-Scripts/Sample_Data/
+	CRS-IMDPune/Python-DEMO-Scripts/Sample_Data/
 	
 STRUCTURE OF REPOSITORY
 
