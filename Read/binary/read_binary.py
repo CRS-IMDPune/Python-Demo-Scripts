@@ -1,3 +1,6 @@
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#########
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
 ###############Reading IMD binary (GRD) data for Maximum temperature###############
 
 import numpy as np
