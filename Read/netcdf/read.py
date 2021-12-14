@@ -1,4 +1,4 @@
-#######PYTHON CODE FOR IMD PUNE PREPARED BY LEKSHMI S#########
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#########
 ########## https://doi.org/10.5281/zenodo.5674826 ############
 
 ##################################READING A NETCDF4 FILE######################################
