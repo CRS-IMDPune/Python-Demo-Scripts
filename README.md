@@ -66,5 +66,8 @@ obtaining zonal statistics (such as state average) and to plot them.
 
 The sample datasets used in this project has been included in the 'Sample_Data' directory.
 	
-Due to size restrictions for uploading data files some files are not included in '/Sample_Data', one can get it from the web
-portals mentioned above.
+Due to size restrictions for uploading data files some files are not included in '/CRS-IMDPune/Python-DEMO-Scripts/Sample_Data',
+one can get it from the web portals mentioned above.
+
+A detailed description of the Python packages and modules used and a study conducted using IMD gridded temperature data with
+the help of Python plotting techniques has been provided in the document '/CRS-IMDPune/Python-DEMO-Scripts/Application.pdf'.
