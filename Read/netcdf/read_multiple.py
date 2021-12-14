@@ -1,5 +1,7 @@
-##################Read a netcdf file#########################
+#########PYTHON CODE FOR IMD PREPARED BY LEKSHMI S############
+########## https://doi.org/10.5281/zenodo.5674826 ############
 
+##################################READING MULTIPLE NETCDF4 FILES#######################################
 ###########Import necessary modules##########################
 
 import netCDF4 as nc
