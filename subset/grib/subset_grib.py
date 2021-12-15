@@ -1,7 +1,13 @@
+#########PYTHON CODE FOR IMD PREPARED BY LEKSHMI S############
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
+#############SUBSETTING A GRIB FILE##########################
+############Import Necessary Modules#########################
 import xarray as xr
 import datetime 
 import numpy as np
 
+#####################Open the dataset########################
 ds=xr.open_dataset('/mnt/e/Python_Scripts/Sample_Data/ERA5_Temperature_2020.grib',engine='cfgrib',backend_kwargs={'indexpath':''})
 
 #print(ds)		###Print summary of the file
@@ -15,8 +21,7 @@ lats=ds.latitude[:]
 lons=ds.longitude[:]
 levs=ds.isobaricInhPa[:]
 
-#################Subsetting the variable#############################
-
+##########################Subsetting the variable#############################
 #############Subsetting over Level, Lat and Lon dimension (METHOD1)#############
 
 temp_lev1=temp.sel(isobaricInhPa=[850])		###Subset over required level
