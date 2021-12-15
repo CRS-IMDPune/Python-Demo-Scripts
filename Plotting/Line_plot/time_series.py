@@ -1,19 +1,18 @@
-########Plotting time series of rainfall at a particular location#############
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
+###Plotting time series of surface wind at a particular location####
 
 ###########Import necessary modules##########################
-
 import netCDF4 as nc
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime as dt
 
-############ File to be read ####################
-############ IMD Gridded Rainfall data ##########
-
+############ File to be read ###################
 file_name  = filename='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 
 ################# open file ######################
-
 f = nc.Dataset(file_name)
 print(f)                # gives us information about the variables 
                         #contained in the file and their dimensions
@@ -24,7 +23,6 @@ for var in f.variables.values():
 print(f['u10'])          # Metadata of single variable
 
 ################# read variables  ################
-
 u10   = f.variables['u10'][:]
 lats = f.variables['latitude'][:]
 lons = f.variables['longitude'][:]
@@ -32,10 +30,9 @@ time = f.variables['time']		# In the file for the time dimension year has been s
 
 #print(lons.min()," ,",lons.max())
 #print(lats)
+
 ##############Subscripting over lat, lon and time###############
-
 ############Subsetting over time##############
-
 st_date=dt.datetime(2019,6,1,0,0)	# Start date and hour
 en_date=dt.datetime(2019,8,1,0,0)	# End date and hour
 date=nc.num2date(time[:],units=time.units,calendar='standard')
@@ -44,7 +41,6 @@ istart=nc.date2index(st_date,time,calendar='standard',select='exact')
 iend=nc.date2index(en_date,time,calendar='standard',select='exact')
 
 ############Subsetting over lat and lon##############
-
 latselect=np.where(lats==10.5)
 lonselect=np.where(lons==82.5)
 
@@ -53,7 +49,6 @@ print(u10sub.max())
 print(u10sub.shape)
 
 #########Creating date strings for X axis#############
-
 date_string=[]
 for n in range(0,u10sub.shape[0],96):
 	dates=dt.datetime(2019,6,1,0,0,0)+n*dt.timedelta(hours=1) 
@@ -63,7 +58,6 @@ for n in range(0,u10sub.shape[0],96):
 x=np.arange(0,u10sub.shape[0],96)
 
 ##################Plot time series #################
-
 fig=plt.figure(figsize=(16,7))
 plt.plot(u10sub[:,0,0],linewidth=1.0,linestyle='-',color='b')	# marker='o'
 
