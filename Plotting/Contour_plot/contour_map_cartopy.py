@@ -1,5 +1,9 @@
-###########Import necessary modules##########################
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
+########## https://doi.org/10.5281/zenodo.5674826 ############
 
+##########Plotting contour over map using cartopy#############
+
+###########Import necessary modules##########################
 import netCDF4 as nc
 import numpy as np
 import matplotlib.pyplot as plt
@@ -10,22 +14,18 @@ import cartopy.feature as cfeature
 from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
 
 ############ File to be read ####################
-
 file_name ='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 
 ################# open file ######################
-
 f = nc.Dataset(file_name)
 print(f)                # gives us information about the variables 
-                        #contained in the file and their dimensions
-                      
+                        #contained in the file and their dimensions                      
 for var in f.variables.values():
     print(var)          # Metadata for all variables
 
 print(f['u10'])          # Metadata of single variable
 
 ################# read variables  ################
-
 u10   = f.variables['u10'][:]
 lats = f.variables['latitude'][:]
 lons = f.variables['longitude'][:]
@@ -36,14 +36,11 @@ time = f.variables['time']		# In the file for the time dimension year has been s
 ##############Subscripting over lat, lon and time###############
 
 ############Subsetting over time##############
-
 st_date=dt.datetime(2019,6,1,0,0)	# Start date and hour
 date=nc.num2date(time[:],units=time.units,calendar='standard')
 istart=nc.date2index(st_date,time,calendar='standard',select='exact')
 
-
 ############Subsetting over lat and lon##############
-
 latbounds = [ 7 , 30 ]	#degrees north
 lonbounds = [ 66.5 , 99 ] 	# degrees east 
 
@@ -53,7 +50,6 @@ u10sub=u10[:,latselect,:][:,:,lonselect]
 U10SUB=u10sub[istart,:,:]
 
 #############Plot Resources#######################
-
 Lats=lats[latselect]
 Lons=lons[lonselect]
 
