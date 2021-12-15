@@ -1,8 +1,15 @@
+#########PYTHON CODE FOR IMD PREPARED BY LEKSHMI S############
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
+#####Writing a netcdf file by reading data from grib file#####
+
+#################Import Necessary Modules#####################
 import xarray as xr
 import datetime as Dt
 import numpy as np
 import netCDF4 as nc
 
+#########################Read the dataset####################
 ds=xr.open_dataset('/mnt/e/Python_Scripts/Sample_Data/ERA5_Temperature_2020.grib',engine='cfgrib',backend_kwargs={'indexpath':''})
 
 #print(ds)		###Print summary of the file
@@ -19,7 +26,6 @@ levs=ds.isobaricInhPa[:].values
 time=ds.time[:].values
 
 #################Subsetting the variable#############################
-
 ##############Subsetting over lat and lon dimension #################
 
 latbounds = [ -15 , 15 ]	#degrees north
