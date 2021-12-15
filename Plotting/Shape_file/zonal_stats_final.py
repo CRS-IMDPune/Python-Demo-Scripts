@@ -1,5 +1,9 @@
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
 ###################Calculating state average of a variable and plotting using shape file#######
 
+#################Import necessary Modules####################
 import geopandas as gpd
 import regionmask 
 import numpy as np
@@ -10,7 +14,6 @@ import xarray as xr
 import netCDF4 as nc
 
 ############### Read the data file###########################
- 
 file_name ='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 f = xr.open_dataset(file_name)
 u10=f.u10.values
@@ -20,7 +23,6 @@ lat_size=len(lat)
 lon_size=len(lon)
 
 ################Read the shape file##########################
-
 fname='/mnt/e/Python_DEMO_Scripts/plotting/shpfile/Admin2.shp'
 shp=gpd.read_file(fname)
 #print(shp.head())
@@ -33,7 +35,6 @@ state1=regionmask.Regions(outlines=list(shp.geometry.values[i] for i in range(0,
 state1_mask=state1.mask(lon,lat)			##### State mask variable
 
 ###################Calculating first state average################
-
 time_ind=10						####Any time step as per need
 u10_all=np.full([lat_size,lon_size],np.nan,order='C')	##Create a variable to store state averagein whole lat-lon range
 result=np.where(state1_mask==0)			###Obtain indices for first state
@@ -48,7 +49,6 @@ del lon_ind
 
 #####################Plotting Settings#############################
 ###############Plotting state 1 average############################
-
 lev_min=-5						#Setting contour min,max levels and divisions
 lev_max=5
 lev_n=30
@@ -59,7 +59,6 @@ c=ax.contourf(x,y,u10_all,cmap='tab20b',levels=np.linspace(lev_min,lev_max,lev_n
 shp.plot(ax=ax,alpha=0.8,facecolor='None',lw=1)	# Shape file plot
 
 ##################Calculating and plotting remaining state average in a loop##############
-
 for i in range(1,shp.shape[0]):			## Remaining states in a loop
 	result=np.where(state1_mask==i)
 	lat_ind=result[0]				
