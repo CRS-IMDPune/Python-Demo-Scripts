@@ -1,6 +1,7 @@
 #######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
 ########## https://doi.org/10.5281/zenodo.5674826 ############
 
+##############Contour map using PyNGL######################
 
 ###############Import necessary Modules#####################
 from __future__ import print_function
@@ -9,6 +10,7 @@ import os
 import numpy as np
 print("")
 
+###################Read the file###########################
 #--  data file name
 fname  = "/mnt/e/Python_Scripts/Sample_Data/olr.day.mean.float.nc"
 
