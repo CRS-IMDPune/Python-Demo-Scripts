@@ -1,7 +1,10 @@
-###############Reading IMD binary (GRD) data for Maximum temperature###############
+#########PYTHON CODE FOR IMD PREPARED BY LEKSHMI S############
+########## https://doi.org/10.5281/zenodo.5674826 ############
 
+################SUBSETTING A BINARY FILE######################
+###############Import necessary Module########################
 import numpy as np
-
+###############Reading IMD binary (GRD) data for Maximum temperature###############
 filename='/mnt/e/Python_Scripts/Sample_Data/Maxtemp_MaxT_2018.GRD'
 
 nlat=31			# Obtained from the ctl file
