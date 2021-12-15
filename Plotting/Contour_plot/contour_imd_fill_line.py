@@ -1,6 +1,9 @@
-###############Reading IMD binary (GRD) data for Maximum temperature###############
-###############Plotting the max temp for any one day###############
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
+########## https://doi.org/10.5281/zenodo.5674826 ############
 
+###########Plotting contour of max temp for any one day#############
+
+###################Import necessary modules#####################
 import numpy as np
 import os
 import matplotlib.pyplot as plt
@@ -16,6 +19,7 @@ print(len(lons))
 lats=np.arange(7.5,38.5,1)
 print(len(lats))
 
+########################Read the dataset############################
 f=open(filename,'rb')		# Opening and reading the file into a one dimensional array
 data=np.fromfile(f,dtype="float32",count=-1)
 print(data, len(data))
@@ -23,7 +27,7 @@ print(data.min())
 print(data.max())
 data_mask=np.ma.masked_where(data==99.9, data)	# Mask where there is missing value
 
-################Reshaping data######################
+#######################Reshaping data##############################
 
 temp=np.reshape(data_mask,(365,31,31),order='C')	# Reshaping data according to the control file
 print(temp.shape)
