@@ -1,7 +1,7 @@
 #######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
 ########## https://doi.org/10.5281/zenodo.5674826 ############
 
-##############Contour map using PyNGL######################
+###########Plotting Contour over map using PyNGL##############
 
 ###############Import necessary Modules#####################
 from __future__ import print_function
