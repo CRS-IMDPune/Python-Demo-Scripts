@@ -1,22 +1,20 @@
-##################Read a netcdf file#########################
+#########PYTHON CODE FOR IMD PREPARED BY LEKSHMI S############
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
+########Writing a netcdf file by reading data from netcdf#####
 
 ###########Import necessary modules##########################
-
 import netCDF4 as nc
 import numpy as np
 import datetime as dt
 
 ############ File to be read ####################
-############ IMD Gridded Rainfall data ##########
-
 file_name  = "/mnt/e/Python_Scripts/Sample_Data/olr.day.mean.nc"
 
 ################# open file ######################
-
 f = nc.Dataset(file_name)
 print(f)                # gives us information about the variables 
-                        #contained in the file and their dimensions
-                        
+                        #contained in the file and their dimensions               
 for dim in f.dimensions.values():
     print(dim)          # Metadata for all dimensions
     
@@ -26,7 +24,6 @@ for var in f.variables.values():
 print(f['olr'])          # Metadata of single variable
 
 ################# read variables  ################
-
 olr   = f.variables['olr'][:]
 lats = f.variables['lat'][:]
 lons = f.variables['lon'][:]
@@ -37,7 +34,6 @@ print(olr.min()," ,",olr.max())
 
 ################Subsetting over lat, lon and time####################
 ############Subsetting over time##############
-
 st_date=dt.datetime(2010,1,10,0,0)		#Give the required time step here-Start
 en_date=dt.datetime(2010,2,10,0,0)		# End date and hour
 date=nc.num2date(time[:],units=time.units,calendar='standard')
@@ -46,7 +42,6 @@ istart=nc.date2index(st_date,time,calendar='standard',select='exact')
 iend=nc.date2index(en_date,time,calendar='standard',select='exact')
 
 ###########Subsetting over lat and lon##########
-
 latbounds = [ -15 , 15 ]
 lonbounds = [ 70.5 , 100.5 ] # degrees east 
 
