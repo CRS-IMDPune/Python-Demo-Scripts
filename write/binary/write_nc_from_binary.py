@@ -1,6 +1,9 @@
-################Write an nc file reading data from a binary file########################
-###############Reading IMD binary (GRD) data for Maximum temperature###############
+#########PYTHON CODE FOR IMD PREPARED BY LEKSHMI S############
+########## https://doi.org/10.5281/zenodo.5674826 ############
 
+########Write an nc file reading data from a binary file###########
+
+##################Import necessary modules####################
 import numpy as np
 import datetime as dt
 import netCDF4 as nc
