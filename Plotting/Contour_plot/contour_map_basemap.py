@@ -1,6 +1,9 @@
+#######PYTHON CODE FOR IMD PREPARED BY LEKSHMI S#############
+########## https://doi.org/10.5281/zenodo.5674826 ############
+
+#############Plotting Contour over Map using Basemap##########
 
 ###########Import necessary modules##########################
-
 import netCDF4 as nc
 import numpy as np
 import matplotlib.pyplot as plt
@@ -8,11 +11,9 @@ import datetime as dt
 from mpl_toolkits.basemap import Basemap
 
 ############ File to be read ####################
-
 file_name  ='/mnt/d/DATA/ERA5/Wind/ERA5_Wind_2019.nc'
 
 ################# open file ######################
-
 f = nc.Dataset(file_name)
 print(f)                # gives us information about the variables 
                         #contained in the file and their dimensions
@@ -23,7 +24,6 @@ for var in f.variables.values():
 print(f['u10'])          # Metadata of single variable
 
 ################# read variables  ################
-
 u10   = f.variables['u10'][:]
 lats = f.variables['latitude'][:]
 lons = f.variables['longitude'][:]
@@ -31,17 +31,14 @@ time = f.variables['time']		# In the file for the time dimension year has been s
 
 #print(lons.min()," ,",lons.max())
 #print(lats)
+
 ##############Subscripting over lat, lon and time###############
-
 ############Subsetting over time##############
-
 st_date=dt.datetime(2019,6,1,0,0)	# Start date and hour
 date=nc.num2date(time[:],units=time.units,calendar='standard')
 istart=nc.date2index(st_date,time,calendar='standard',select='exact')
 
-
 ############Subsetting over lat and lon##############
-
 latbounds = [ 7 , 30 ]	#degrees north
 lonbounds = [ 70.5 , 99 ] 	# degrees east 
 
@@ -54,7 +51,6 @@ print(u10sub.shape)
 print(U10SUB.shape)
 
 ###############Plotting Resources#####################
-
 map = Basemap(projection='merc',llcrnrlon=70.5,llcrnrlat=7.,urcrnrlon=99,urcrnrlat=15.,lat_0=10.,lon_0=85.,resolution='l')
 
 # draw coastlines, country boundaries, fill continents.
