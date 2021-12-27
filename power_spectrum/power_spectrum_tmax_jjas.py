@@ -108,7 +108,7 @@ ax.tick_params(axis='both', which='major', labelsize=16)
 plt.grid(True)
 #leg=ax.legend()
 
-plt.savefig('power_spectrum_tmax_jjas1.png')
+plt.savefig('ps_tmax_jjas_power_frequency.png')
 
 fig1 =plt.figure(figsize=(20,7))
 ax1=fig1.add_subplot(1,1,1)
