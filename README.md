@@ -45,7 +45,9 @@ The path for obtaining the scripts and sample data are listed below:
 	CRS-IMDPune/Python-DEMO-Scripts/write/
 4. Plotting Scripts
 	CRS-IMDPune/Python-DEMO-Scripts/Plotting/
-5. Sample Datasets
+5. Power Spectrum 
+	CRS-IMDPune/Python-DEMO-Scripts/power_spectrum/
+6. Sample Datasets
 	CRS-IMDPune/Python-DEMO-Scripts/Sample_Data/
 	
 STRUCTURE OF REPOSITORY
