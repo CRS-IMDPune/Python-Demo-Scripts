@@ -66,7 +66,7 @@ It includes time series, line and filled contours, including maps, overlaying pl
 Shapefile has been used to give administrative boundaries (Eg: state or district) in the map and also has been used for 
 obtaining zonal statistics (such as state average) and to plot them.
 
-The sample datasets used in this project has been included in the 'Sample_Data' directory.
+The sample datasets used in this project has been included in the '/Sample_Data' directory.
 	
 Due to size restrictions for uploading data files some files are not included in '/CRS-IMDPune/Python-DEMO-Scripts/Sample_Data',
 one can get it from the web portals mentioned above.
