@@ -47,7 +47,11 @@ The path for obtaining the scripts and sample data are listed below:
 	CRS-IMDPune/Python-DEMO-Scripts/Plotting/
 5. Power Spectrum 
 	CRS-IMDPune/Python-DEMO-Scripts/power_spectrum/
-6. Sample Datasets
+6. EOF Analysis
+	CRS-IMDPune/Python-DEMO-Scripts/EOF/
+7. Trend Analysis
+	CRS-IMDPune/Python-DEMO-Scripts/Trend_analysis/
+8. Sample Datasets
 	CRS-IMDPune/Python-DEMO-Scripts/Sample_Data/
 	
 STRUCTURE OF REPOSITORY
@@ -72,6 +76,6 @@ Due to size restrictions for uploading data files some files are not included in
 one can get it from the web portals mentioned above.
 
 A detailed description of the Python packages and modules used and a study conducted using IMD gridded temperature data with
-the help of Python plotting techniques has been provided in the document '/CRS-IMDPune/Python-DEMO-Scripts/Application.pdf'.
+the help of Python plotting techniques has been provided in the document '/CRS-IMDPune/Python-DEMO-Scripts/Application_report.pdf'.
 
 Disclaimer: The codes, plots and every other content added here are meant for academic and research purposes. In no event shall the code developers or India meteorological department be liable to any party for direct, indirect, special, incidental or consequential damages including lost profits, arising out of the use of these codes and its documentation. The data, codes, shapefiles, maps and plots included in here does not define any administration areas or boundaries and the code developers or India meteorological department by no means claim the legal or scientific authenticity of these contents added here. All the codes are obtained, modified or developed from open source resources.
