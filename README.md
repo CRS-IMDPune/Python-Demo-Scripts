@@ -77,5 +77,6 @@ one can get it from the web portals mentioned above.
 
 A detailed description of the Python packages and modules used and a study conducted using IMD gridded temperature data with
 the help of Python plotting techniques has been provided in the document '/CRS-IMDPune/Python-DEMO-Scripts/Application_report.pdf'.
+The codes used for the plots included in the script are included in the folder 'CRS-IMDPune/Python-DEMO-Scripts/Application_report_plots/'.
 
 Disclaimer: The codes, plots and every other content added here are meant for academic and research purposes. In no event shall the code developers or India meteorological department be liable to any party for direct, indirect, special, incidental or consequential damages including lost profits, arising out of the use of these codes and its documentation. The data, codes, shapefiles, maps and plots included in here does not define any administration areas or boundaries and the code developers or India meteorological department by no means claim the legal or scientific authenticity of these contents added here. All the codes are obtained, modified or developed from open source resources.
