@@ -51,7 +51,13 @@ The path for obtaining the scripts and sample data are listed below:
 	CRS-IMDPune/Python-DEMO-Scripts/EOF/
 7. Trend Analysis
 	CRS-IMDPune/Python-DEMO-Scripts/Trend_analysis/
-8. Sample Datasets
+8. Geospatial Analysis
+	CRS-IMDPune/Python-DEMO-Scripts/Geospatial_Analysis
+9. Artificial Intelligence
+	CRS-IMDPune/Python-DEMO-Scripts/AI_Applications
+10. Application Report
+	CRS-IMDPune/Python-DEMO-Scripts/Application_Report_plots
+12. Sample Datasets
 	CRS-IMDPune/Python-DEMO-Scripts/Sample_Data/
 	
 STRUCTURE OF REPOSITORY
@@ -69,6 +75,9 @@ In the 'plotting' directory sub-folders are given for different kinds of plottin
 It includes time series, line and filled contours, including maps, overlaying plots, vector plots and usage of shapefiles.
 Shapefile has been used to give administrative boundaries (Eg: state or district) in the map and also has been used for 
 obtaining zonal statistics (such as state average) and to plot them.
+
+A set of examples for EOF analysis, trend and power spectrum analysis has also been included in respective folders. Few 
+demonstrations of using Python for AI applications has also been added in this.
 
 The sample datasets used in this project has been included in the '/Sample_Data' directory.
 	
