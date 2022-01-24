@@ -2,6 +2,7 @@
 ########## https://doi.org/10.5281/zenodo.5674826 ############
 
 ###################Calculating state average of a variable and plotting using shape file#######
+#################Please refer to raster_stats_method2.py for another easier method#############
 
 #################Import necessary Modules####################
 import geopandas as gpd
