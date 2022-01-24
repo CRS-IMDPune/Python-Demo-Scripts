@@ -1,4 +1,5 @@
-###################Calculating state average of a variable and plotting using shape file#######
+###################Calculating district average of a variable during any day and plotting using shape file#######
+#####################Method 2 for raster statistics calculation and plotting######################
 import geopandas as gpd
 import regionmask 
 import numpy as np
@@ -71,4 +72,4 @@ for idx, row in df_merged.iterrows():
     #plt.annotate(s=row['Rainfall'], xy=row['coords'],horizontalalignment='center')       # To give value of district average rainfall
     
 #################################Save the figure############################################
-plt.savefig('district_avg_rainfall_daily.png')
+plt.savefig('raster_stats_method2.png')
