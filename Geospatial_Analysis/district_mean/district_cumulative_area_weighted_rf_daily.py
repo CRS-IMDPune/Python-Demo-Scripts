@@ -1,4 +1,8 @@
 
+#################Percent contribution of each grid points to each districts has been calculated and provided as Grid Contribution.csv file#####
+################By using this actual contribution of each grid point to each district the district avergae is calculated############
+################ This script is a sample for Kerala state for which district shape file and grid contribution are available#########
+################Same method can be used for other states provided all necessary files are available#################################
 ###################Calculating area-weighted district rainfall and plotting it###################
 import geopandas as gpd
 import regionmask 
