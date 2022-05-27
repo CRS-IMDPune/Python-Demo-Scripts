@@ -20,3 +20,6 @@ Using Cartopy: https://semba-blog.netlify.app/07/04/2020/mapping-with-cartopy-in
 
 PyNGL and PyNIO GALLERY
 https://www.pyngl.ucar.edu/Examples/gallery.shtml
+
+NEURAL NETWORK AND DEEP LEARNING
+https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-1-neural-network-deep-learning.md
