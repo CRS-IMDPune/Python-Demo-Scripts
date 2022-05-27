@@ -22,4 +22,7 @@ PyNGL and PyNIO GALLERY
 https://www.pyngl.ucar.edu/Examples/gallery.shtml
 
 NEURAL NETWORK AND DEEP LEARNING
+INTRODUCTORY
 https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-1-neural-network-deep-learning.md
+RECURRENT NEURAL NETWORK AND LSTMs
+https://colah.github.io/posts/2015-08-Understanding-LSTMs/
