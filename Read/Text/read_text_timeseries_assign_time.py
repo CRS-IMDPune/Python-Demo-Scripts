@@ -44,7 +44,7 @@ NINO34 = xr.Dataset(
 )
 print(NINO34)
 
-NINO34.to_netcdf('Nino34_SST_Anomaly.nc')
+NINO34.to_netcdf('Nino34_SST_Anomaly.nc')        # Save the variable as a dataset in a netCDF file
 ####################Try plotting Nino34 time series#####################
 fig=plt.figure(figsize=(12,8))
 NINO34.sel(time=slice('2010-01-01','2020-12-31')).Nino34.plot(marker='o')
@@ -52,4 +52,4 @@ plt.title('Nino3.4 Time series',fontsize=15)
 plt.tick_params(axis="both", labelsize=15)
 plt.xlabel('Time',fontsize=15)
 plt.ylabel('Nino3.4 SST Anomaly',fontsize=15)
-plt.savefig('Timeseries_Nino34.png',facecolor='white')
+plt.savefig('Timeseries_Nino34.png',facecolor='white')    # Save the plot
