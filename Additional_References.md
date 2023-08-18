@@ -36,3 +36,6 @@ https://github.com/ashishpatel26/Andrew-NG-Notes/blob/master/andrewng-p-1-neural
 RECURRENT NEURAL NETWORK AND LSTMs
 
 https://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
+GEOSPATIAL DATA ANALYSIS AND VISUALIZATION
+https://www.tomasbeuzen.com/python-for-geospatial-analysis/README.html
